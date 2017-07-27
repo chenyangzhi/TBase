@@ -196,7 +196,7 @@ private:
 	explicit Status(Code _code, SubCode _subcode = kNone)
 		: code_(_code), subcode_(_subcode), state_(nullptr) {}
 
-	Status(Code _code, const Slice& msg, const Slice& msg2);
+	Status(Code _code, const Slice& msg, const Slice& msg2) {};
 	static const char* CopyState(const char* s);
 };
 
